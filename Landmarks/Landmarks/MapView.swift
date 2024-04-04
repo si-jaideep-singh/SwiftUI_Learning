@@ -10,6 +10,7 @@ import MapKit
 
 
 struct MapView: View {
+    var coordinate : CLLocationCoordinate2D
     var body: some View {
         Map(initialPosition: .region(region))
     }
@@ -25,5 +26,5 @@ struct MapView: View {
 
 
 #Preview {
-    MapView()
+    MapView(coordinate: CLLocationCoordinate2D(latitude: 34.011_286, longitude: -116.166_868))
 }
