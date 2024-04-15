@@ -25,7 +25,6 @@ struct PageViewController<Page: View>: UIViewControllerRepresentable {
         pageViewController.dataSource = context.coordinator
         pageViewController.delegate = context.coordinator
 
-
         return pageViewController
     }
 
